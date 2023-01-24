@@ -1,7 +1,9 @@
 const Contact = () => {
     return( 
         <div>
-            Hello
+            <h1>Contaact page</h1>
         </div>
     )
 }
+
+export default Contact
