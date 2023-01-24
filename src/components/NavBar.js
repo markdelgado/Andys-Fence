@@ -21,6 +21,7 @@ const NavBar = () => {
 
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
+                    <h2 className='header'>Andys Fence & Landscaping LLC</h2>
                     <Nav className="me-auto">
                        
                         
