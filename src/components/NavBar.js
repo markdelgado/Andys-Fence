@@ -21,28 +21,16 @@ const NavBar = () => {
 
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <h2 className='header'>Andys Fence & Landscaping LLC</h2>
+                    <h3 className='header'>Andys Fence & Landscaping LLC</h3>
                     <Nav className="me-auto">
                        
-                        
-                        {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">
-                                Another action
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">
-                                Separated link
-                            </NavDropdown.Item>
-                        </NavDropdown> */}
                     </Nav>
                   
                     <Nav>
                         <Nav.Link href="/">Services</Nav.Link>
                         <Nav.Link href="/contact">Contact</Nav.Link>
                         <Nav.Link eventKey={2} href="#memes">Portfolio</Nav.Link>
-                        <Nav.Link eventKey={3} href="#memes">About Us</Nav.Link>
+                        <Nav.Link eventKey={3} href="/about">About Us</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

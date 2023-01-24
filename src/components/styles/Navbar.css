@@ -2,6 +2,14 @@
     height: 5em;
 } */
 
-h2 {
-    color: white
+h3 {
+    color: white;
+
+}
+
+#myVideo1 {
+    position: relative;
+    height: 800px;
+    bottom: 800px;
+    z-index: 0;
 }
