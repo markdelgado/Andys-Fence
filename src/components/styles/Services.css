@@ -1,0 +1,16 @@
+.g-4 {
+
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    
+}
+
+.overlay-title {
+   color: white;
+   margin-top: 10%;
+}
+
+.card-title {
+    margin-top: 10%;
+}
