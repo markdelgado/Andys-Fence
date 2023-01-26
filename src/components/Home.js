@@ -1,3 +1,6 @@
+import React, { Component } from 'react'
+// import video from './videos/HeroVideo.mp4'
+import './styles/Home.css'
 
 const Home = () => {
     return (
@@ -6,10 +9,10 @@ const Home = () => {
     //         <source src='/Users/markdelgado/Projects/andys-fence/public/HeroVideo.mp4' type='video/mp4' />
     // </video>
         <div className='myVideo'>
-            {/* <video autoPlay muted loop id="myVideo1">
-                <source src='../public/video/HeroVideo.mp4' type='video/mp4' />
-            </video> */}
-            <h1>hello</h1>
+            <video autoPlay muted loop id="HeroVideo" src='./videos/HeroVideo.mp4' >
+                <source  type='video/mp4' />
+            </video>
+
         </div>
     )
 }

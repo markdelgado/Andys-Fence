@@ -12,6 +12,9 @@
    margin-top: 10%;
    border-color: aliceblue;
 }
+#overlay-top-title {
+    color: black;
+}
 
 .card-title {
     margin-top: 10%;

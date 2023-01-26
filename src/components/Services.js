@@ -9,11 +9,13 @@ import { Button, Carousel, Accordion } from 'react-bootstrap';
 const Services = () => {
     return (
         <div>
-            <h1>Services</h1>
+            <h1>Fence styles</h1>
             <img />
         <Row xs={1} md={3} className="g-4">
                 <Col>
                 <Card style={{ width: '20rem' }}>
+                    
+                            <Card.Title id='overlay-top-title' >Aluminum</Card.Title>
                     <Carousel>
                         <Carousel.Item>
                             <Card.Img   
@@ -21,11 +23,11 @@ const Services = () => {
                             src="./images/aluminumfence2.jpeg"
                             className="d-block w-100"
                             id='card-image' />
-                            <Card.ImgOverlay>
+                            {/* <Card.ImgOverlay>
 
                                     <Card.Title id='overlay-title' >Aluminum</Card.Title>
                             </Card.ImgOverlay>
-                            
+                             */}
                         </Carousel.Item>
                             <Carousel.Item>
                                 <img
@@ -74,6 +76,7 @@ const Services = () => {
 
                 <Col>
                     <Card style={{ width: '20rem' }}>
+                            
                         <Card.Img variant="top" src="./images/aluminumfence.jpeg" />
                         <Card.Body>
                             <Card.Title>Aluminum</Card.Title>
