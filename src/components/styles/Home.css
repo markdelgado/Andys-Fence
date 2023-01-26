@@ -4,8 +4,9 @@
     bottom: 800px;
     z-index: 0;
 } */
+
   
-    #HeroVideo {
+    /* #HeroVideo {
         position: absolute;
         display: block;
             z-index: -1;
@@ -15,4 +16,4 @@
             height: auto;
             top: 6%;
            
-    }
+    } */

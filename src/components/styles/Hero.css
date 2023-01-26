@@ -1,0 +1,11 @@
+ #HeroVideo {
+     position: absolute;
+     display: block;
+     z-index: -1;
+     margin-left: auto;
+     margin-right: auto;
+     width: 100%;
+     height: auto;
+     top: 6%;
+
+ }
