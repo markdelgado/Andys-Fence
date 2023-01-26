@@ -6,11 +6,26 @@
     
 }
 
-.overlay-title {
+#overlay-title {
    color: white;
+   font-size: larger;
    margin-top: 10%;
+   border-color: aliceblue;
 }
 
 .card-title {
     margin-top: 10%;
+}
+h1 {
+    color:  red;
+    position: relative;
+    display: flexbox;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius:  10px;
+    border: 1px;
+    background-color: aqua;
+}
+#card-image {
+    height: 200px;
 }
