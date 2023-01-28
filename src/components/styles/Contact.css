@@ -1,0 +1,19 @@
+.Contact-container {
+    background-color:rgb(133, 143, 143);
+    width: 30%;
+
+  
+}
+li {
+    padding: 0;
+        margin: 0;
+        list-style: none;
+        margin-bottom: 10px;
+        overflow: hidden;
+        display: block;
+        position: relative;
+        opacity: 0;
+        animation: fadeInUp 2s 2s;
+        animation-fill-mode: forwards;
+        clear: both;
+}
