@@ -1,19 +1,6 @@
-/* #myVideo1 {
-    position: relative;
-    height: 800px;
-    bottom: 800px;
-    z-index: 0;
-} */
 
-  
-    /* #HeroVideo {
-        position: absolute;
-        display: block;
-            z-index: -1;
-            margin-left: auto;
-            margin-right: auto;
-            width: 100%;
-            height: auto;
-            top: 6%;
-           
-    } */
+#Home-container {
+    display: flex;
+    flex-direction: column;
+ 
+}
