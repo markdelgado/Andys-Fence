@@ -1,4 +1,4 @@
-
+import { useState } from 'react';
 import './styles/Services.css'
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
@@ -6,7 +6,10 @@ import Row from 'react-bootstrap/Row';
 import { Button, Carousel, Accordion } from 'react-bootstrap';
 
 
+
 const Services = () => {
+const [flipped, setFlipped] = useState(false)
+
     return (
         <div>
             <h1>Fence styles</h1>
@@ -15,7 +18,6 @@ const Services = () => {
                 <Col>
                 <Card style={{ width: '20rem' }}>
                     
-                            <Card.Title id='overlay-top-title' >Aluminum</Card.Title>
                     <Carousel>
                         <Carousel.Item>
                             <Card.Img   
@@ -23,11 +25,7 @@ const Services = () => {
                             src="./images/aluminumfence2.jpeg"
                             className="d-block w-100"
                             id='card-image' />
-                            {/* <Card.ImgOverlay>
 
-                                    <Card.Title id='overlay-title' >Aluminum</Card.Title>
-                            </Card.ImgOverlay>
-                             */}
                         </Carousel.Item>
                             <Carousel.Item>
                                 <img
@@ -38,6 +36,7 @@ const Services = () => {
 
                     </Carousel>
                         <Card.Body>
+                            <Card.Title id='overlay-top-title' >Aluminum</Card.Title>
                             {/* <Card.Text>
                             Aluminum fences offer durability, low maintenance and a sleek design for property boundary and security.They offer a modern and elegant look, and are resistant to rust and corrosion, making them ideal for any weather condition. They come in a variety of styles, colors and designs, making them a versatile choice for any property.
                         </Card.Text> */}
@@ -75,18 +74,44 @@ const Services = () => {
                 </Col>
 
                 <Col>
-                    <Card style={{ width: '20rem' }}>
-                            
+
+                     <div className={`card ${flipped ? 'flipped' : ''}`}>
+                     <Card style={{ width: '20rem' }} className="front">
                         <Card.Img variant="top" src="./images/aluminumfence.jpeg" />
                         <Card.Body>
                             <Card.Title>Aluminum</Card.Title>
                             {/* <Card.Text>
                                 Aluminum fences offer durability, low maintenance and a sleek design for property boundary and security.They offer a modern and elegant look, and are resistant to rust and corrosion, making them ideal for any weather condition. They come in a variety of styles, colors and designs, making them a versatile choice for any property.
                             </Card.Text> */}
-                            <Button variant="primary">Learn more about this material</Button>
+                            <Button onclick={()=> setFlipped(!flipped)} variant="primary">flip</Button>
                         </Card.Body>
                     </Card>
+                        <Card style={{ width: '20rem' }} className="back">
+                            <Card.Img variant="top" src="./images/aluminumfence.jpeg" />
+                            <Card.Body>
+                                <Card.Title>Aluminum</Card.Title>
+                                {/* <Card.Text>
+                                Aluminum fences offer durability, low maintenance and a sleek design for property boundary and security.They offer a modern and elegant look, and are resistant to rust and corrosion, making them ideal for any weather condition. They come in a variety of styles, colors and designs, making them a versatile choice for any property.
+                            </Card.Text> */}
+                                <Button variant="primary">Learn more about this material</Button>
+                            </Card.Body>
+                        </Card>
+
+                     </div>
                 </Col>
+                {/* <Col>
+                    <div className="card-container">
+                        <div className={`card ${flipped ? 'flipped' : ''}`}>
+                            <div className="front">
+                                <h2>Front of Card</h2>
+                            </div>
+                            <div className="back">
+                                <h2>Back of Card</h2>
+                            </div>
+                        </div>
+                        <button onClick={() => setFlipped(!flipped)}>Flip Card</button>
+                    </div>
+                </Col> */}
                 
                
 
